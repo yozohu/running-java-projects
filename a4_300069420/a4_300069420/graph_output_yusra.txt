@@ -1,0 +1,169 @@
+This graph has 12 vertices:
+A
+D
+B
+Y
+C
+E
+H
+I
+F
+G
+J
+X
+It also has 14 edges:
+A to D
+A to B
+A to Y
+B to C
+D to E
+H to I
+I to F
+B to F
+C to G
+G to J
+F to J
+F to A
+F to X
+X to Y
+Enter command: remove vertex A
+
+This graph has 11 vertices:
+D
+B
+Y
+C
+E
+H
+I
+F
+G
+J
+X
+It also has 10 edges:
+B to C
+D to E
+H to I
+I to F
+B to F
+C to G
+G to J
+F to J
+F to X
+X to Y
+Enter command: remove edge D E
+
+This graph has 11 vertices:
+D
+B
+Y
+C
+E
+H
+I
+F
+G
+J
+X
+It also has 9 edges:
+B to C
+H to I
+I to F
+B to F
+C to G
+G to J
+F to J
+F to X
+X to Y
+Enter command: insert vertex W
+
+This graph has 12 vertices:
+D
+B
+Y
+C
+E
+H
+I
+F
+G
+J
+X
+W
+It also has 9 edges:
+B to C
+H to I
+I to F
+B to F
+C to G
+G to J
+F to J
+F to X
+X to Y
+Enter command: insert edge W G
+
+This graph has 12 vertices:
+D
+B
+Y
+C
+E
+H
+I
+F
+G
+J
+X
+W
+It also has 10 edges:
+B to C
+H to I
+I to F
+B to F
+C to G
+G to J
+F to J
+F to X
+X to Y
+W to G
+Enter command: DONE0
+
+Invalid command: DONE0
+Enter command: remove vertex F
+
+This graph has 11 vertices:
+D
+B
+Y
+C
+E
+H
+I
+G
+J
+X
+W
+It also has 8 edges:
+B to C
+H to I
+I to F
+B to F
+F to J
+F to X
+X to Y
+W to G
+Enter command: remove vertex X
+
+java.lang.IndexOutOfBoundsException: Index 11 out of bounds for length 11
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:373)
+	at java.base/java.util.ArrayList.get(ArrayList.java:426)
+	at net.datastructures.ExpandableSquareMatrix.get(ExpandableSquareMatrix.java:79)
+	at net.datastructures.AdjacencyMatrixGraph$MyVertex.incidentEdges(AdjacencyMatrixGraph.java:328)
+	at net.datastructures.AdjacencyMatrixGraph.incidentEdges(AdjacencyMatrixGraph.java:74)
+	at net.datastructures.AdjacencyMatrixGraph.removeVertex(AdjacencyMatrixGraph.java:199)
+	at GraphTest.removeVertex(GraphTest.java:101)
+	at GraphTest.getUserCommands(GraphTest.java:224)
+	at GraphTest.main(GraphTest.java:279)

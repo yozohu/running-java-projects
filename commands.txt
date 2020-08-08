@@ -1,0 +1,22 @@
+remove vertex A
+remove edge D E
+insert vertex W
+insert edge W G
+DONE0
+remove vertex F
+remove vertex X
+DONE1
+insert vertex Z
+DONE2
+insert edge Z J
+insert edge W Z
+insert edge B H
+DONE3
+remove edge W Z
+remove edge H I
+DONE4
+remove vertex J
+remove vertex C
+remove vertex W
+remove vertex H
+DONE5
